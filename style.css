@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size:14px;
+    font-family: 'Roboto', sans-serif;
+    background-color:rgb(0,0,0);
+    color: #FEFEFE;
+
+
+}
+
+a{
+    color: #2d3bff;
+    font-weight:bolder;
+    text-decoration: none;
+}
+
+h1{
+    font-size:16px;
+    font-weight:bolder;
+}
+
+.container{
+    margin: 20px;
+    padding: 20px;
+}
+
+.subforum{
+    margin-top: 20px;
+}
+
+.subforum-title{
+    background-color:#292B2E;
+    padding:5px;
+    border-radius: 5px;
+    margin: 4px;
+}
+
+.subforum-description{
+    margin-block:0;
+}
+
+.subforum-row{
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+
+.subforum-column{
+    padding : 10px;
+    margin : 4px;
+    border-radius: 5px;
+    background: #111314;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subforum-icon i{
+    font-size:45px;
+}
+
+.subforum-devider{
+    display:none;
+}
+
+
+
+/*Pour Smartphones*/
+
+@media screen and (max-width:460px){
+    .container{
+        margin: 10px;
+        padding:10px;
+    }
+    .subforum-row{
+        display: grid;
+        grid-template-columns: 25% 75%;
+        grid-template-rows: 65% 35%;
+    }
+    
+    .subforum-stats{
+        font-size: 12px;
+    }
+
+    .subforum-devider{
+        display:block;
+        border: 0;
+        height: 1px;
+        background-image:linear-gradient(to right, rgba(190, 190 ,190, 0), rgba(255, 255, 255, 0.75)), rgba(190, 190, 190, 0); 
+    }
+
+}
+
+/*Navbar*/
+
+header{
+    margin-inline: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    background-color: #261e9b;
+    padding: 10px;
+    width: 65%;
+    display:inline-block;
+    border-radius: 5px;
+    max-height: 80px;
+    margin-right:10px;
+}
+
+.nav-list{
+    list-style-type:none;
+    overflow:hidden;
+}
+
+.nav-item a{
+    float:right;
+    display: block;
+    text-align:center;
+    margin-inline: 20px;
+    font-size: 20px;
+    padding:10px;
+    color: #FFF;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+
+.close-icon i{
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 16px;
+    display: inline-block;
+    margin-right: 10 px;
+    color: #fff;
+    cursor:  pointer;
+}
+
+.brand{
+    font-size: 60px;
+    display: inline-block;
+}
